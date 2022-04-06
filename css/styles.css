@@ -1,0 +1,236 @@
+:root {
+  --acsent-color: #2196f3;
+  --title-color: #212121;
+  --link-color: #212121;
+  --text-color: #757575;
+  --button-background: #2196f3;
+  --button-filtr-color: #212121;
+  --team-background: #F5F4FA;
+  --footer-background: #2f303a;
+
+}
+body {
+  background-color: #ffffff;
+  color: #757575;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Цвет логотипа */
+.logo {
+  color: #000000;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--acsent-color);
+}
+.logo-web{
+  color: var(--acsent-color);
+}
+/* Навигация  */
+.nav-items {
+  list-style: none;
+  
+}
+.nav-items-link,
+.author-link{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--link-color);
+  text-decoration: none;
+}
+.nav-items-link:hover,
+.nav-items-link:focus,
+.author-link:hover,
+.author-link:focus{
+  color: var(--acsent-color);
+}
+/* Эффект текущей страницы */
+.nav-items .current{
+  color: var(--acsent-color);
+}
+.author{
+  list-style: none;
+}
+.author-link{
+  color: #757575;
+}
+  
+/* Блок решения 
+с кнопкой заказать услугу   */
+.order-type {
+  background-color: #2f303a;
+}
+
+.order-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2f303a;
+
+}
+/* Кнопка Заказать услугу */
+.button-order {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--button-background);
+  cursor: pointer;
+}
+
+.button-order:hover,
+.button-order:focus {
+  background-color: #188CE8;
+}
+/* Properties - Особенности */
+.properties{
+  list-style: none;
+}
+.properties-title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--link-color);
+}
+.properties-text{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+
+}
+/* Чем мы занимаемся */
+.work-title,
+.our-team-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.work-items{
+  list-style: none;
+}
+
+/* Наша команда */
+.our-team{
+  background-color: var(--team-background);
+}
+.our-team-items{
+  list-style: none;
+}
+.our-team-name{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.our-team-post{
+  font-size: 16px;
+  line-height: 1.2;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* Галерея */
+/* Список без маркеров */
+.gallery {
+  list-style: none;
+}
+.gallery-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.gallery-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* Кнопки фильтра */
+.button-items {
+  list-style: none;
+}
+.button-filtr {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--button-filtr-color);
+  cursor: pointer;
+}
+.button-filtr:hover,
+.button-filtr:focus {
+  background-color: var(--button-background);
+  color: #ffffff;
+}
+/* Footer */
+.footer {
+  background-color: var(--footer-background);
+  
+}
+.logo-foot {
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-foot:hover,
+.logo-foot:focus{
+  color: var(--acsent-color);
+}
+.footer-list{
+  list-style: none;
+}
+/* Адрес - карта */
+.link-map,
+.contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts {
+  color: #ffffff99;
+
+}
+.link-map:hover,
+.link-map:focus,
+.contacts:hover,
+.contacts:focus{
+  color: var(--acsent-color);
+}
