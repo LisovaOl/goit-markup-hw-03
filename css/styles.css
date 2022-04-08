@@ -16,21 +16,17 @@ body {
   margin: 0;
 }
 .container{
-  width: 1200px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
-  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section{
   margin-top: 94px;
 }
-.header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: aqua;
-}
+
 /* Цвет логотипа */
 .logo {
   color: #000000;
@@ -51,23 +47,26 @@ body {
   color: var(--acsent-color);
 }
 /* Навигация  */
-.nav-items {
+.main-nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;  
+  display: flex;
+  margin-left: 93px;  
 
 }
-/* .nav-items .item{
-  background-color: rgb(180, 123, 123);
-} */
 
-.nav-items .item:not(:last-child){
+.nav .item:not(:last-child){
   margin-right: 50px;
 }
 
-.nav-items-link,
-.author-link{
+.nav .link,
+.author .link{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -79,14 +78,14 @@ body {
   padding-bottom: 32px;
 
 }
-.nav-items-link:hover,
-.nav-items-link:focus,
-.author-link:hover,
-.author-link:focus{
+.nav .link:hover,
+.nav .link:focus,
+.author .link:hover,
+.author .link:focus{
   color: var(--acsent-color);
 }
 /* Эффект текущей страницы */
-.nav-items .current{
+.nav .current{
   color: var(--acsent-color);
 }
 .author{
@@ -94,8 +93,9 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  margin-left: auto;
 }
-.author-link{
+.author .link{
   color: #757575;
 }
 .author .item + .item{
@@ -104,12 +104,12 @@ body {
 }
 /* Блок решения 
 с кнопкой заказать услугу   */
-.order-type {
+.order {
   background-color: #2f303a;
   text-align: center;
 }
 
-.order-title {
+.order .title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -117,7 +117,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #2f303a;
-  padding: 0;
+  padding-top: 200px;
+  padding-bottom: 30px;
   margin: 0;
 
 }
@@ -134,7 +135,7 @@ body {
   color: #ffffff;
   background-color: var(--button-background);
   cursor: pointer;
-  margin-top: 30px;
+  margin-bottom: 200px;
 
 }
 
@@ -148,7 +149,7 @@ body {
   padding: 0;
   margin-top: 94px;
 }
-.properties-title{
+.properties .title{
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -158,7 +159,7 @@ body {
   margin: 0;
 
 }
-.properties-text{
+.properties .text{
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -169,8 +170,8 @@ body {
 
 }
 /* Чем мы занимаемся */
-.work-title,
-.our-team-title{
+.work .title,
+.our-team .title{
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -180,11 +181,11 @@ body {
   margin: 0;
   padding-bottom: 50px;
 }
-.our-team-title{
+.our-team .title{
   padding-top: 94px;
 }
 
-.work-items{
+.work .items{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -195,12 +196,12 @@ body {
   background-color: var(--team-background);
   margin-top: 94px;
 }
-.our-team-items{
+.our-team .items{
   list-style: none;
   padding: 0;
   text-align: center;
 }
-.our-team-name{
+.our-team .name{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -212,7 +213,7 @@ body {
   margin: 0;
 
 }
-.our-team-post{
+.our-team .post{
   font-size: 16px;
   line-height: 1.2;
   /* text-align: center; */
@@ -227,14 +228,14 @@ body {
 .gallery {
   list-style: none;
 }
-.gallery-title {
+.gallery .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
-.gallery-text {
+.gallery .text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -242,10 +243,10 @@ body {
 }
 
 /* Кнопки фильтра */
-.button-items {
+.button .items {
   list-style: none;
 }
-.button-filtr {
+.items .filtr {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -255,8 +256,8 @@ body {
   color: var(--button-filtr-color);
   cursor: pointer;
 }
-.button-filtr:hover,
-.button-filtr:focus {
+.items .filtr:hover,
+.items .filtr:focus {
   background-color: var(--button-background);
   color: #ffffff;
 }
