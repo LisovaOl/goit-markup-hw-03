@@ -16,7 +16,7 @@ body {
   margin: 0;
 }
 .container{
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
@@ -146,8 +146,18 @@ body {
 /* Properties - Особенности */
 .properties{
   list-style: none;
+  display: flex;
   padding: 0;
   margin-top: 94px;
+  margin-bottom: 94px;
+}
+.properties .item{
+  width: 270px;
+  margin: 0;
+
+}
+.properties .item:not(:last-child){
+  margin-right: 30px;
 }
 .properties .title{
   font-weight: 700;
@@ -185,27 +195,39 @@ body {
   padding-top: 94px;
 }
 
-.work .items{
+.section.work .work{
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.work .item:not(:last-child){
+  margin-right: 30px;
 }
 
 /* Наша команда */
 .our-team{
   background-color: var(--team-background);
-  margin-top: 94px;
 }
-.our-team .items{
+.our-team.items{
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
+  margin: 0;
   text-align: center;
+  padding-bottom: 94px;
+
+}
+
+.our-team .item{
+  width: 270px;
+
 }
 .our-team .name{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--title-color);
   padding-top: 30px;
@@ -223,28 +245,14 @@ body {
   padding-bottom: 30px;
 
 }
-/* Галерея */
-/* Список без маркеров */
-.gallery {
-  list-style: none;
-}
-.gallery .title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-color);
-}
-.gallery .text {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
-
 /* Кнопки фильтра */
 .button .items {
   list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: 94px;
+
 }
 .items .filtr {
   font-family: inherit;
@@ -261,6 +269,46 @@ body {
   background-color: var(--button-background);
   color: #ffffff;
 }
+
+/* Галерея */
+/* Список без маркеров */
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 94px;
+
+}
+.gallery .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+
+
+}
+.gallery .text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin-top: 4px;
+
+}
+.gallery .title,
+.gallery .text {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+
+
 /* Footer */
 .footer {
   background-color: var(--footer-background);
