@@ -20,6 +20,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
+  margin: 0;
+}
+.section{
+  margin-top: 94px;
 }
 .header{
   display: flex;
@@ -83,17 +87,19 @@ body {
 с кнопкой заказать услугу   */
 .order-type {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .order-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #2f303a;
+  padding: 0;
+  margin: 0;
 
 }
 /* Кнопка Заказать услугу */
@@ -102,7 +108,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
   width: 200px;
@@ -110,6 +115,7 @@ body {
   color: #ffffff;
   background-color: var(--button-background);
   cursor: pointer;
+  margin-top: 30px;
 
 }
 
@@ -120,6 +126,8 @@ body {
 /* Properties - Особенности */
 .properties{
   list-style: none;
+  padding: 0;
+  margin-top: 94px;
 }
 .properties-title{
   font-weight: 700;
@@ -128,12 +136,17 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--link-color);
+  margin: 0;
+
 }
 .properties-text{
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 0px;
+  margin-top: 10px;
+
 
 }
 /* Чем мы занимаемся */
@@ -145,17 +158,27 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin: 0;
+  margin-bottom: 50px;
 }
+.our-team-title{
+  padding-top: 94px;
+}
+
 .work-items{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Наша команда */
 .our-team{
   background-color: var(--team-background);
+  margin-top: 94px;
 }
 .our-team-items{
   list-style: none;
+  padding: 0;
 }
 .our-team-name{
   font-weight: 500;
@@ -164,6 +187,8 @@ body {
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin: 0;
+
 }
 .our-team-post{
   font-size: 16px;
@@ -171,6 +196,8 @@ body {
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin: 0;
+
 }
 /* Галерея */
 /* Список без маркеров */
