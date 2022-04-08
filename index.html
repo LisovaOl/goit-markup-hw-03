@@ -12,20 +12,27 @@
 </head>
 <body>
     <!-- навигация -->
-    <header>
+
+    <header class="header">
+        <div class="container">
         <a href="#" class="logo"><span class="logo-web">Web</span>Studio</a>
-        <nav>
-            <ul class="nav-items">
-                <li><a class="nav-items-link current" href="index.html" >Студия</a></li>
-                <li><a class="nav-items-link" href="portfolio.html" >Портфолио</a></li>
-                <li><a class="nav-items-link" href="#" >Контакты</a></li>
-            </ul>
-        </nav>
+        
+            <nav>
+                <ul class="nav-items">
+                    <li><a class="nav-items-link current" href="index.html" >Студия</a></li>
+                    <li><a class="nav-items-link" href="portfolio.html" >Портфолио</a></li>
+                    <li><a class="nav-items-link" href="#" >Контакты</a></li>
+                </ul>
+            </nav>
+    
+        
         <ul class="author">
             <li><a class="author-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="author-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
+
     <main>
     <!-- Шапка с кнопкой -->
     <section class="order-type">
@@ -33,6 +40,8 @@
         <button type="button" class="button-order"> Заказать услугу</button>
     </section>
 <!-- Особенности . Скрыть заголовок! -->
+<div class="container">
+
     <section>
         <h2 hidden>Особенности</h2>
         <ul class="properties">
@@ -54,8 +63,11 @@
                 </li>
         </ul>
     </section>
+</div>
+
 <!-- Чем занимаемся -->
-    <section>
+<div class="container">
+<section>
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="work-items">
             <li><img src="./images/index/box1.jpg" alt="Работа за компьютером" width="370" height="300"></li>
@@ -63,7 +75,9 @@
             <li><img src="./images/index/box3.jpg" alt="Работа на планшете" width="370" height="300"></li>
         </ul>
     </section>
+</div>
 <!-- Наша команда -->
+<div class="container">
     <section class="our-team">
         <h2 class="our-team-title">Наша команда</h2>
         <ul class="our-team-items">
@@ -89,9 +103,11 @@
             </li>
         </ul>
     </section>
+</div>
         
     </main>
     <!-- Подвал, футер -->
+<div class="container">
     <footer class="footer">
         <a class="logo-foot" 
         href="#" 
@@ -109,6 +125,7 @@
             </ul>        
         </address>      
     </footer>
+</div>
    
 </body>
 </html>
