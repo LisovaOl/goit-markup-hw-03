@@ -19,12 +19,17 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
   padding-left: 15px;
   padding-right: 15px;
 }
 .section{
-  margin-top: 94px;
+  padding: 94px 0;
+}
+.header{
+  /* Установит стили нинжней рамки */
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: #ECECEC;
 }
 
 /* Цвет логотипа */
@@ -50,6 +55,7 @@ body {
 .main-nav{
   display: flex;
   align-items: center;
+  
 }
 
 .nav {
@@ -117,8 +123,6 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 30px;
   margin: 0;
 
 }
@@ -135,7 +139,6 @@ body {
   color: #ffffff;
   background-color: var(--button-background);
   cursor: pointer;
-  margin-bottom: 200px;
 
 }
 
@@ -148,8 +151,6 @@ body {
   list-style: none;
   display: flex;
   padding: 0;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 .properties .item{
   width: 270px;
@@ -191,9 +192,6 @@ body {
   margin: 0;
   padding-bottom: 50px;
 }
-.our-team .title{
-  padding-top: 94px;
-}
 
 .section.work .work{
   display: flex;
@@ -216,7 +214,6 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
-  padding-bottom: 94px;
 
 }
 
@@ -252,7 +249,6 @@ body {
   display: flex;
   padding: 0;
   margin-right: 0;
-  margin-top: 94px;
   justify-content: center;
 
 }
@@ -265,20 +261,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--button-filtr-color);
   cursor: pointer;
-
-}
-.items .filtr {
   background: var(--team-background);
   border: var(--team-background);
   height: 38px;
   border-radius: 4px;
   padding: 6px 22px;
-  margin-left: 30px;
+  margin-left: 8px;
   margin-bottom: 30px;
 
-}
-/* .items .filtr:first-child{
-  margin-left: 0; */
 }
 
 .items .filtr:hover,
@@ -295,7 +285,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 94px;
 }
 
 .gallery .item{
@@ -335,6 +324,22 @@ body {
   margin-top: 20px;
   margin-left: 24px;
   margin-right: 24px;
+
+     /* Установит стили правой рамки */
+     border-right-width: 1px;
+     border-right-style: solid;
+     border-right-color: #EEEEEE;
+   
+     /* Установит стили нинжней рамки */
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: #EEEEEE; 
+   
+     /* Установит стили левой рамки */
+     border-left-width: 1px;
+     border-left-style: solid;
+     border-left-color: #EEEEEE;
+  
 }
 
 
@@ -359,6 +364,8 @@ body {
 }
 .footer-list{
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* Адрес - карта */
 .link-map,
