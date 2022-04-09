@@ -246,12 +246,14 @@ body {
 
 }
 /* Кнопки фильтра */
+
 .button .items {
   list-style: none;
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-right: 0;
   margin-top: 94px;
+  justify-content: center;
 
 }
 .items .filtr {
@@ -263,7 +265,22 @@ body {
   letter-spacing: 0.03em;
   color: var(--button-filtr-color);
   cursor: pointer;
+
 }
+.items .filtr {
+  background: var(--team-background);
+  border: var(--team-background);
+  height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+}
+/* .items .filtr:first-child{
+  margin-left: 0; */
+}
+
 .items .filtr:hover,
 .items .filtr:focus {
   background-color: var(--button-background);
