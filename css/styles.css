@@ -7,14 +7,18 @@
   --button-filtr-color: #212121;
   --team-background: #F5F4FA;
   --footer-background: #2f303a;
+  --order-background: #2f303a;
+  --border-color: #EEEEEE;
 
 }
+
 body {
   background-color: #ffffff;
-  color: #757575;
+  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
+
 .container{
   width: 1200px;
   margin-left: auto;
@@ -22,17 +26,21 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .section{
   padding: 94px 0;
 }
+
 .header{
-  /* Установит стили нинжней рамки */
+      /* Установит стили нижней рамки */
+
  border-bottom-width: 1px;
  border-bottom-style: solid;
  border-bottom-color: #ECECEC;
 }
 
-/* Цвет логотипа */
+      /* Цвет логотипа */
+
 .logo {
   color: #000000;
   font-family: 'Raleway';
@@ -41,17 +49,22 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+
   padding: 0;
 
 }
+
 .logo:hover,
 .logo:focus {
   color: var(--acsent-color);
 }
+
 .logo-web{
   color: var(--acsent-color);
 }
-/* Навигация  */
+
+          /* Навигация  */
+
 .main-nav{
   display: flex;
   align-items: center;
@@ -60,10 +73,10 @@ body {
 
 .nav {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
+  margin: 0;
   margin-left: 93px;  
+  padding: 0;
 
 }
 
@@ -79,6 +92,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--link-color);
   text-decoration: none;
+  
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -90,28 +104,33 @@ body {
 .author .link:focus{
   color: var(--acsent-color);
 }
-/* Эффект текущей страницы */
+        /* Эффект текущей страницы */
+
 .nav .current{
   color: var(--acsent-color);
 }
+
 .author{
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
+  margin: 0;
   margin-left: auto;
+  padding: 0;
 }
+
 .author .link{
   color: #757575;
 }
+
 .author .item + .item{
   margin-left: 50px;
   
 }
-/* Блок решения 
-с кнопкой заказать услугу   */
+          /* Блок решения 
+          с кнопкой заказать услугу   */
+
 .order {
-  background-color: #2f303a;
+  background-color: var(--order-background);
   text-align: center;
 }
 
@@ -122,11 +141,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #2f303a;
+  background-color: var(--order-background);
   margin: 0;
 
 }
-/* Кнопка Заказать услугу */
+        /* Кнопка Заказать услугу */
+
 .button-order {
   font-family: inherit;
   font-weight: 700;
@@ -146,12 +166,26 @@ body {
 .button-order:focus {
   background-color: #188CE8;
 }
-/* Properties - Особенности */
+
+            /* Properties - Особенности */
+
 .properties{
   list-style: none;
   display: flex;
   padding: 0;
 }
+.visually-hidden { 
+  position: absolute; 
+  width: 1px; 
+  height: 1px; 
+  margin: -1px; 
+  border: 0; 
+  padding: 0; 
+  white-space: nowrap; 
+  clip-path: inset(100%); 
+  clip: rect(0 0 0 0); 
+  overflow: hidden; 
+} 
 .properties .item{
   width: 270px;
   margin: 0;
@@ -160,6 +194,7 @@ body {
 .properties .item:not(:last-child){
   margin-right: 30px;
 }
+
 .properties .title{
   font-weight: 700;
   font-size: 14px;
@@ -170,6 +205,7 @@ body {
   margin: 0;
 
 }
+
 .properties .text{
   font-size: 14px;
   line-height: 1.71;
@@ -178,9 +214,10 @@ body {
   margin-bottom: 0px;
   margin-top: 10px;
 
-
 }
-/* Чем мы занимаемся */
+
+      /* Чем мы занимаемся */
+
 .work .title,
 .our-team .title{
   font-weight: 700;
@@ -194,11 +231,12 @@ body {
 }
 
 .section.work .work{
-  display: flex;
   list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
 }
+
 .work .item:not(:last-child){
   margin-right: 30px;
 }
@@ -207,13 +245,14 @@ body {
 .our-team{
   background-color: var(--team-background);
 }
+
 .our-team.items{
+  list-style: none; 
   display: flex;
+  text-align: center;
   justify-content: space-between;
-  list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
 
 }
 
@@ -221,37 +260,39 @@ body {
   width: 270px;
 
 }
+
 .our-team .name{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin: 0;
   padding-top: 30px;
   padding-bottom: 10px;
-  margin: 0;
 
 }
+
 .our-team .post{
   font-size: 16px;
   line-height: 1.2;
-  /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin: 0;
   padding-bottom: 30px;
 
 }
-/* Кнопки фильтра */
+      /* Кнопки фильтра */
 
 .button .items {
   list-style: none;
   display: flex;
-  padding: 0;
-  margin-right: 0;
   justify-content: center;
+  margin-right: 0;
+  padding: 0;
 
 }
+
 .items .filtr {
   font-family: inherit;
   font-weight: 500;
@@ -265,9 +306,9 @@ body {
   border: var(--team-background);
   height: 38px;
   border-radius: 4px;
-  padding: 6px 22px;
   margin-left: 8px;
   margin-bottom: 30px;
+  padding: 6px 22px;
 
 }
 
@@ -279,6 +320,7 @@ body {
 
         /* Галерея */
         /* Список без маркеров */
+
 .gallery {
   list-style: none;
   display: flex;
@@ -301,12 +343,22 @@ body {
   margin-bottom: 0;
 }
 
+.gallery .img{
+  display: block;
+  margin: 0;
+
+}
 .gallery .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  margin: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-top: 20px;
+
 }
 
 .gallery .text {
@@ -315,36 +367,35 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-top: 4px;
-}
-
-.gallery .title,
-.gallery .text {
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
   margin-left: 24px;
   margin-right: 24px;
+  margin-bottom: 20px;
+  padding: 0;
+ 
+}
 
-     /* Установит стили правой рамки */
-     border-right-width: 1px;
-     border-right-style: solid;
-     border-right-color: #EEEEEE;
-   
-     /* Установит стили нинжней рамки */
-     border-bottom-width: 1px;
-     border-bottom-style: solid;
-     border-bottom-color: #EEEEEE; 
-   
-     /* Установит стили левой рамки */
-     border-left-width: 1px;
-     border-left-style: solid;
-     border-left-color: #EEEEEE;
+.item .border{
+/* Установит стили правой рамки */
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--border-color);
+
+  /* Установит стили нинжней рамки */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color); 
+
+  /* Установит стили левой рамки */
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--border-color);
   
 }
 
 
 
-/* Footer */
+        /* Footer */
+
 .footer {
   background-color: var(--footer-background);
   
@@ -358,16 +409,20 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
 .logo-foot:hover,
 .logo-foot:focus{
   color: var(--acsent-color);
 }
+
 .footer-list{
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* Адрес - карта */
+
+          /* Адрес - карта */
+
 .link-map,
 .contacts {
   font-style: normal;
@@ -382,6 +437,7 @@ body {
   color: #ffffff99;
 
 }
+
 .link-map:hover,
 .link-map:focus,
 .contacts:hover,
