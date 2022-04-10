@@ -30,12 +30,25 @@ body {
 .section{
   padding: 94px 0;
 }
-
+/* Скидання списків */
 ul{
   list-style: none;
   margin: 0;
   padding: 0;
 
+}
+h1,
+h2, 
+h3, 
+p{
+  padding: 0;
+  margin: 0;
+}
+/* базові */
+img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .header{
       /* Установит стили нижней рамки */
@@ -77,11 +90,9 @@ ul{
   
 }
 
-.nav {
+.nav.list {
   display: flex;
-  margin: 0;
   margin-left: 93px;  
-  padding: 0;
 
 }
 
@@ -115,11 +126,9 @@ ul{
   color: var(--acsent-color);
 }
 
-.author{
+.author.list{
   display: flex;
-  margin: 0;
   margin-left: auto;
-  padding: 0;
 }
 
 .author .link{
@@ -175,9 +184,8 @@ ul{
 
             /* Properties - Особенности */
 
-.properties{
+.properties.list{
   display: flex;
-  padding: 0;
 }
 .visually-hidden { 
   position: absolute; 
@@ -193,7 +201,6 @@ ul{
 } 
 .properties .item{
   width: 270px;
-  margin: 0;
 
 }
 .properties .item:not(:last-child){
@@ -207,7 +214,6 @@ ul{
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--link-color);
-  margin: 0;
 
 }
 
@@ -231,14 +237,13 @@ ul{
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-
-.section.work .work{
+.section.work{
+  padding-top: 0;
+}
+.section.work .work.list{
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .work .item:not(:last-child){
@@ -250,12 +255,10 @@ ul{
   background-color: var(--team-background);
 }
 
-.our-team.items{
+.our-team.list{
   display: flex;
   text-align: center;
   justify-content: space-between;
-  padding: 0;
-  margin: 0;
 
 }
 
@@ -263,16 +266,18 @@ ul{
   width: 270px;
 
 }
+.name.post{
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+}
 .our-team .name{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
 }
 
@@ -281,21 +286,22 @@ ul{
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 0;
 
 }
       /* Кнопки фильтра */
 
-.button .items {
+.filtr.list {
   display: flex;
   justify-content: center;
-  margin-right: 0;
-  padding: 0;
+  margin-bottom: 30px;
 
 }
-
-.items .filtr {
+.filtr .item{
+  margin-left: 8px;
+ 
+}
+.filtr.list .filtr {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -308,14 +314,12 @@ ul{
   border: var(--team-background);
   height: 38px;
   border-radius: 4px;
-  margin-left: 8px;
-  margin-bottom: 30px;
   padding: 6px 22px;
 
 }
 
-.items .filtr:hover,
-.items .filtr:focus {
+.filtr.list .filtr:hover,
+.filtr.list .filtr:focus {
   background-color: var(--button-background);
   color: #ffffff;
 }
@@ -323,11 +327,9 @@ ul{
         /* Галерея */
         /* Список без маркеров */
 
-.gallery {
+.gallery.list{
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 .gallery .item{
@@ -344,18 +346,12 @@ ul{
   margin-bottom: 0;
 }
 
-.gallery .img{
-  display: block;
-  margin: 0;
-
-}
 .gallery .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
-  margin: 0;
   margin-left: 24px;
   margin-right: 24px;
   padding-top: 20px;
@@ -371,7 +367,6 @@ ul{
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 20px;
-  padding: 0;
  
 }
 
@@ -399,7 +394,8 @@ ul{
 
 .footer {
   background-color: var(--footer-background);
-  
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .logo-foot {
   color: #ffffff;
@@ -416,14 +412,13 @@ ul{
   color: var(--acsent-color);
 }
 
-.footer-list{
-  padding: 0;
-  margin: 0;
+          /* Адрес - карта */
+.address{
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
-          /* Адрес - карта */
-
-.link-map,
+.contacts.map,
 .contacts {
   font-style: normal;
   font-size: 14px;
@@ -431,13 +426,17 @@ ul{
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
+  /* margin-bottom: 9px; */
 }
+
 
 .contacts {
   color: #ffffff99;
 
 }
-
+.footer .item:not(:last-child){
+  margin-bottom: 9px;
+}
 .link-map:hover,
 .link-map:focus,
 .contacts:hover,

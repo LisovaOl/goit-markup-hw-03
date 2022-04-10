@@ -17,13 +17,13 @@
         <div class="container main-nav">
             <a href="#" class="logo"><span class="logo-web">Web</span>Studio</a>
                 <nav>
-                    <ul class="nav">
+                    <ul class="nav list">
                         <li class="item"><a class="link current" href="index.html" >Студия</a></li>
                         <li class="item"><a class="link" href="portfolio.html" >Портфолио</a></li>
                         <li class="item"><a class="link" href="#" >Контакты</a></li>
                     </ul>
                 </nav>
-            <ul class="author">
+            <ul class="author list">
                 <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
@@ -46,7 +46,7 @@
             <div class="container">
 
                 <h2 class="visually-hidden" >Особенности</h2>
-                <ul class="properties">
+                <ul class="properties list">
                     <li class="item"> 
                         <h3 class="title">Внимание к деталям</h3>
                         <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -71,8 +71,8 @@
 
         <section class="section work">
             <div class="container">
-                <h2 class="title">Чем мы занимаемся</h2>
-                <ul class="work">
+               <h2 class="title">Чем мы занимаемся</h2>
+                <ul class="work list">
                     <li class="item"><img src="./images/index/box1.jpg" alt="Работа за компьютером" width="370" height="300"></li>
                     <li class="item"><img src="./images/index/box2.jpg" alt="Работа за ноутбуком" width="370" height="300"></li>
                     <li class="item"><img src="./images/index/box3.jpg" alt="Работа на планшете" width="370" height="300"></li>
@@ -85,26 +85,34 @@
         <section class="section our-team">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
-                <ul class="our-team items">
+                <ul class="our-team list">
                     <li class="item">
                         <img src="./images/index/photo1.jpg" alt="Игорь Демьяненко, Product Designer" width="270" height="260">  
-                        <h3 class="name">Игорь Демьяненко</h3>
-                        <p class="post">Product Designer</p>                                    
+                        <div class="name post">
+                            <h3 class="name">Игорь Демьяненко</h3>
+                            <p class="post">Product Designer</p> 
+                        </div>                                   
                     </li>
                     <li class="item">
                         <img src="./images/index/photo2.jpg" alt="Ольга Репина, Frontend Developer" width="270" height="260">  
-                        <h3 class="name">Ольга Репина</h3>
-                        <p class="post">Frontend Developer</p>
+                        <div class="name post">
+                            <h3 class="name">Ольга Репина</h3>
+                            <p class="post">Frontend Developer</p>
+                            </div>
                     </li>
                     <li class="item">
                         <img src="./images/index/photo3.jpg" alt="Николай Тарасов, Marketing" width="270" height="260">  
-                        <h3 class="name">Николай Тарасов</h3>
-                        <p class="post">Marketing</p>
+                        <div class="name post">
+                            <h3 class="name">Николай Тарасов</h3>
+                            <p class="post">Marketing</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img src="./images/index/photo4.jpg" alt="Михаил Ермаков, UI Designer" width="270" height="260">  
-                        <h3 class="name">Михаил Ермаков</h3>
-                        <p class="post">UI Designer</p>
+                        <div class="name post">
+                            <h3 class="name">Михаил Ермаков</h3>
+                            <p class="post">UI Designer</p>
+                            </div>
                     </li>
                 </ul>
             </div>
@@ -116,14 +124,14 @@
         <div class="container">
             <a class="logo-foot" href="#" target="_blank" rel="noopener noreferrer">
             <span class="logo-web">Web</span>Studio</a>
-            <address>
+            <address class="address">
                 <ul class="footer-list">
-                    <li><a class="link-map" 
+                    <li class="item"><a class="contacts map" 
                         href="https://goo.gl/maps/UUaV6C99xNGQSZhZA" 
                         target="_blank" 
                         rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="item"><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="item"><a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>        
             </address> 
         </div>
