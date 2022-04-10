@@ -31,6 +31,12 @@ body {
   padding: 94px 0;
 }
 
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
 .header{
       /* Установит стили нижней рамки */
 
@@ -72,7 +78,6 @@ body {
 }
 
 .nav {
-  list-style: none;
   display: flex;
   margin: 0;
   margin-left: 93px;  
@@ -111,7 +116,6 @@ body {
 }
 
 .author{
-  list-style: none;
   display: flex;
   margin: 0;
   margin-left: auto;
@@ -132,6 +136,8 @@ body {
 .order {
   background-color: var(--order-background);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .order .title {
@@ -142,7 +148,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: var(--order-background);
-  margin: 0;
+  margin-bottom: 30px;
 
 }
         /* Кнопка Заказать услугу */
@@ -170,7 +176,6 @@ body {
             /* Properties - Особенности */
 
 .properties{
-  list-style: none;
   display: flex;
   padding: 0;
 }
@@ -231,7 +236,6 @@ body {
 }
 
 .section.work .work{
-  list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
@@ -247,7 +251,6 @@ body {
 }
 
 .our-team.items{
-  list-style: none; 
   display: flex;
   text-align: center;
   justify-content: space-between;
@@ -285,7 +288,6 @@ body {
       /* Кнопки фильтра */
 
 .button .items {
-  list-style: none;
   display: flex;
   justify-content: center;
   margin-right: 0;
@@ -322,7 +324,6 @@ body {
         /* Список без маркеров */
 
 .gallery {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -416,7 +417,6 @@ body {
 }
 
 .footer-list{
-  list-style: none;
   padding: 0;
   margin: 0;
 }
