@@ -52,7 +52,6 @@ img{
 }
 .header{
       /* Установит стили нижней рамки */
-
  border-bottom-width: 1px;
  border-bottom-style: solid;
  border-bottom-color: #ECECEC;
@@ -68,6 +67,8 @@ img{
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 93px;  
+
 
   padding: 0;
 
@@ -90,14 +91,14 @@ img{
   
 }
 
-.nav.list {
+.nav{
   display: flex;
-  margin-left: 93px;  
-
+  margin: 0;
 }
 
-.nav .item:not(:last-child){
-  margin-right: 50px;
+.nav .item:not(:first-child){
+  margin-left: 50px;
+  
 }
 
 .nav .link,
@@ -352,9 +353,6 @@ img{
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
-  margin-left: 24px;
-  margin-right: 24px;
-  padding-top: 20px;
 
 }
 
@@ -364,13 +362,12 @@ img{
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-top: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
  
 }
 
 .item .border{
+padding: 20px 24px;
+
 /* Установит стили правой рамки */
   border-right-width: 1px;
   border-right-style: solid;
