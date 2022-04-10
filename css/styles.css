@@ -69,9 +69,6 @@ img{
   text-decoration: none;
   margin-right: 93px;  
 
-
-  padding: 0;
-
 }
 
 .logo:hover,
@@ -93,7 +90,6 @@ img{
 
 .nav{
   display: flex;
-  margin: 0;
 }
 
 .nav .item:not(:first-child){
@@ -423,7 +419,6 @@ padding: 20px 24px;
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
-  /* margin-bottom: 9px; */
 }
 
 
