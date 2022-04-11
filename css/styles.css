@@ -291,7 +291,7 @@ img{
 .filtr.list {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
 }
 .filtr .item{
@@ -387,8 +387,8 @@ padding: 20px 24px;
 
 .footer {
   background-color: var(--footer-background);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-foot {
   color: #ffffff;
@@ -407,7 +407,7 @@ padding: 20px 24px;
 
           /* Адрес - карта */
 .address{
-  padding-top: 20px;
+  margin-top: 20px;
   padding-bottom: 0;
 }
 
